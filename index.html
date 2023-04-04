@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./imtxon 2/sass/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-light fw-bold">
+      <div class="container-xl px-xl-0 px-sm-5">
+        <a href="#" class="navbar-brand">
+          <img src="./imtxon 2/images/Logo.png " alt="Logo" />
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav ms-auto text-secondary d-xl-flex d-sm-none gap-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cafe Munu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Alowishus Catering</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn d-flex align-items-center gap-3 ms-4">
+          <a class="btn bg-white rounded-circle d-block py-2" href="#">
+            <i class="fas fa-light fa-basket-shopping"></i>
+          </a>
+          <a
+            class="btn btn-dark roundedpill d-none d-xl-block px-4 py-2 d-xl-block d-sm-none"
+            href="#"
+            >Buy gift vouchers</a
+          >
+          <a class="btn bg-white rounded-circle d-xl-none d-sm-block" href="#">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </nav> -->
+    <!-- ------------------------------------------------------------------------- -->
+    <header class="d-none d-lg-block">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="logo-header">
+            <img src="./imtxon 2/images/Logo.png" alt="" />
+          </div>
+          <div class="d-flex header-left w-75 align-items-center">
+            <ul class="nav justify-content-center">
+              <li class="nav-item text" style="color: black">
+                <a
+                  class="nav-link text-dark active"
+                  aria-current="page"
+                  href="#"
+                  target="_blank"
+                  >Active</a
+                >
+              </li>
+              <li class="nav-item text" style="color: black">
+                <a class="nav-link text-dark" href="#">Cafe Munu</a>
+              </li>
+              <li class="nav-item text" style="color: black">
+                <a class="nav-link text-dark" href="#">About Us</a>
+              </li>
+              <li class="nav-item text" style="color: black">
+                <a href="#" class="nav-link text-dark">Find Us</a>
+              </li>
+            </ul>
+            <div class="d-flex a align-items-center gap-3">
+              <div class="korzinka">
+                <button class="bg-light border-0 p-3">
+                  <img class="text-light" src="./icmg/header.png" alt="" />
+                  <i class="fa-solid fa-basket-shopping fs-3"></i>
+                </button>
+              </div>
+              <button class="text-light fw-bold px-5 py-2 rounded-4 button-btn">
+                Buy gift vouchers
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------------- -->
+    <nav class="navbar navbar-dark d-lg-none">
+      <div class="container-fluid">
+        <div class="logo-header">
+          <img src="./imtxon 2/images/Logo.png" alt="" />
+        </div>
+        <div class="d-flex gap-2">
+          <div class="korzinka rounded-4">
+            <button class="bg-light border-0 rounded-circle p-3">
+              <!-- <img class="text-light" src="./img/header.png" alt="" /> -->
+              <i class="fa-solid fa-basket-shopping fa-fade fs-3"></i>
+            </button>
+          </div>
+          <div class="d-flex align-items-center bg-light rounded-circle">
+            <button
+              class="navbar-toggler px-3 rounded-circle"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-solid fa-bars fs-1 text-dark"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Dark offcanvas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- -------------- -->
+    <!-- <section id="section-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 p-0">
+            <h1 class="display-1 fw-bold">
+              Alowishus <br />
+              Delicious <br />
+              Coffee
+              <img src="./img/text-logo.png" alt="" />
+            </h1>
+            <p class="w-75">
+              A drink from the "My Alowishus" bottled brews range OR grab one of
+              our delicious coffee's.
+            </p>
+            <div class="buttons">
+              <button
+                class="button-colr text-light fw-bold px-5 py-3 rounded-5"
+              >
+                Download App
+              </button>
+              <a href="" class="text-dark px-4">Shop Coffee</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 p-0 my-5">
+            <div class="relative">
+              <img src="./img/Group 7.png" alt="" class="w-100" />
+              <div class="t">
+                  <button class="button-btn">Buy now</button>
+                  <div class="fa-fade aa" style="width: 120px">
+                    <dsiv
+                      class="w-100 d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/128/2697/2697212.png"
+                        alt=""
+                        class="w-25"
+                      />
+                    </dsiv>
+                    <div class="then rounded-top-2 mt-1">
+                      <p class="you m-0">Then you</p>
+                    </div>
+                  </div>
+                </div>
+              <div class="absolute-2 rounded-3">
+                  <div class="absolute-img">
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                  </div>
+                  <p class="text-secondary m-0 pb-2 pt-2">
+                    4.9 out 5 overall Star <br />
+                    Rating for All Local Business
+                  </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute-1">
+                  <img src="./img/col6-img-menu.png" class="w100" alt="" />
+                  <img src="./img/Mask group.png" class="imgg" alt="" />
+                </div>
+                <div class="absolute">
+                  <img src="./img/text-logo.png" class="" alt="" />
+                </div>
+                <div class="absolute-2 rounded-3">
+                  <div class="absolute-img">
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                    <i class="fa-solid fa-star fs-4"></i>
+                    <i class="fa-solid fa-star fa-spin fa-spin-reverse"></i>
+                  </div>
+                  <p class="text-secondary m-0 pb-2 pt-2">
+                    4.9 out 5 overall Star <br />
+                    Rating for All Local Business
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ------------------------------------------------------------------------- -->
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 p-0">
+            <h1 class="display-1 fw-bold">
+              Alowishus <br />
+              Delicious <br />
+              Coffee
+            </h1>
+            <p class="w-75">
+              A drink from the "My Alowishus" bottled brews range OR grab one of
+              our delicious coffee's.
+            </p>
+            <div class="buttons">
+              <button
+                class="buttoncolr button-btn textlight fw-bold px-5 py-3 rounded-5"
+              >
+                Download App
+              </button>
+              <a href="" class="text-dark px-4 btn rounded-5">Shop Coffee</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 p-0 my-5">
+            <div class="relative">
+              <img
+                src="./imtxon 2/images/Group 7 (1).png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------- -->
+    <section id="menu">
+      <div class="container text-center m">
+        <h1 class="display-2 fw-bold">Explore Our Alowishus</h1>
+        <p class="fw-bold text-secondary">
+          A drink from the "My Alowishus" bottled brews range OR <br />
+          grab one of our delicious coffee's.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-xl-3 p-4">
+            <div class="row">
+              <div class="col-12 rounded-4 p-5 bg-col-12">
+                <h3 class="text-start fw-bold">Our Catering</h3>
+                <p class="w- text-start">
+                  Alowishus Catering, delicious drop off Catering
+                </p>
+                <img
+                  src="./imtxon 2/images/food.png"
+                  class="text-center"
+                  alt=""
+                />
+                <button class="d-block m-auto mt-5 button-btn">
+                  Order cathering
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------- -->
+          <div class="col-12 col-md-6 col-xl-3 p-4">
+            <div class="row">
+              <div class="col-12 rounded-4 p-5 bg-col-12">
+                <h3 class="text-start fw-bold">The Food</h3>
+                <p class="w- text-start">
+                  Alowishus Catering, delicious drop off Catering
+                </p>
+                <img
+                  src="./imtxon 2/images/fast-food.png"
+                  class="text-center"
+                  alt=""
+                />
+                <button class="d-block m-auto mt-5 button-btn">
+                  food menu
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------- -->
+          <div class="col-12 col-md-6 block-col col-xl-3 p-4">
+            <div class="row">
+              <div class="col-12 rounded-4 p-5 bg-col-12">
+                <h3 class="text-start fw-bold">The Gelato</h3>
+                <p class="w- text-start">
+                  Alowishus Catering, delicious drop off Catering
+                </p>
+                <img
+                  src="./imtxon 2/images/ice-cream.png"
+                  class="text-center"
+                  alt=""
+                />
+                <button class="d-block m-auto mt-5 button-btn">
+                  Discover more
+                </button>
+              </div>
+            </div>
+            <!-- <img
+              src="./imtxon 2/images/24 1.png"
+              class="position-absolute w-25 start0"
+              alt=""
+            /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------- -->
+    <section
+      class="row align-items-center w-100 ps-5"
+      style="margin-top: 100px"
+    >
+      <div
+        class="col-lg-6 text-center text-lg-start justify-content-center d-flex align-items-center align-items-lg-start flex-column"
+      >
+        <h1 class="fw-bold display-3 w-75">
+          Order Your <br />
+          Favourite Coffee
+        </h1>
+        <p class="text-secondary fs-4 w-75 py-4 media-pp">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <button class="button-btn mt-3">Order Now</button>
+      </div>
+      <img src="./imtxon 2/images/Group 21.png" class="col-lg-6" alt="" />
+    </section>
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- <section class="row align-items-center w-100 ps-5">
+      <img src="./images/Group 21.png" class="col-lg-6" alt="" />
+
+      <div
+        class="col-lg-6 text-center text-lg-start justify-content-center d-flex align-items-center align-items-lg-start flex-column"
+      >
+        <h1 class="fw-bold display-3 w-75">Order Your Favourite Coffee</h1>
+        <p class="text-secondary fs-4 w-75 py-4">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <button class="button-btn mt-3 btn btn-dark">Order Now</button>
+      </div>
+    </section> -->
+    <!-- ------------------------------------------------------------------------- -->
+    <section id="best-coffee">
+      <div class="container py-5">
+        <h1 class="text-center display-3 fw-bold">Best Selling Coffee</h1>
+        <p class="text-center text-secondary fs-4">
+          A drink from the "My Alowishus" bottled brews range OR <br />
+          grab one of our delicious coffee's.
+        </p>
+
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 p-4">
+            <div class="row">
+              <div class="col-12 bg-light p-4 rounded-4">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./imtxon 2/images/Group 24.png"
+                    class="w-50"
+                    alt=""
+                  />
+                  <div class="">
+                    <p>#1 Selling</p>
+                    <p class="fs-1 fw-bold">
+                      Double <br />
+                      Espresso
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap"
+                >
+                  <p class="m-0 fw-bold fs-3">$59.99</p>
+                  <button class="button-btn">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------- -->
+          <div class="col-12 col-md-6 col-lg-4 p-4">
+            <div class="row">
+              <div class="col-12 bg-light p-4 rounded-4">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./imtxon 2/images/Group 24.png"
+                    class="w-50"
+                    alt=""
+                  />
+                  <div class="">
+                    <p>#1 Selling</p>
+                    <p class="fs-1 fw-bold">
+                      Double <br />
+                      Espresso
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap"
+                >
+                  <p class="m-0 fw-bold fs-3">$59.99</p>
+                  <button class="button-btn">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------- -->
+          <div class="col-12 col-md-6 col-lg-4 col-md6-none p-4">
+            <div class="row">
+              <div class="col-12 bg-light p-4 rounded-4">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./imtxon 2/images/Group 24.png"
+                    class="w-50"
+                    alt=""
+                  />
+                  <div class="">
+                    <p>#1 Selling</p>
+                    <p class="fs-1 fw-bold">
+                      Double <br />
+                      Espresso
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt dolor ullamco est sit aliqua
+                  dolor do amet sint. Velit officia consequat duis.
+                </p>
+                <div
+                  class="d-flex align-items-center justify-content-between flex-wrap"
+                >
+                  <p class="m-0 fw-bold fs-3">$59.99</p>
+                  <button class="button-btn">Order now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------- -->
+    <section>
+      <div class="container position-relative">
+        <!-- <img
+          class="position-absolute w-25"
+          style="top: 0; left: -100px; z-index: -1"
+          src="./imtxon 2/images/26.png"
+          alt=""
+        /> -->
+
+        <div class="row align-items-center row-row">
+          <div class="col-12 col-lg-6 col-cap">
+            <div class="ps-2">
+              <h2 class="display-4 fw-bold col-8 pb-3">
+                Instant Coffee At Your Home
+              </h2>
+              <p class="pb-4 col-10">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <button
+                class="btn btn-outline-dark rounded-5 px-4 py-2"
+                type="submit"
+              >
+                Download our app
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img class="w-100" src="./imtxon 2/images/Group 5369.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------- -->
+    <div class="fixed-one rounded-5">
+      <!-- <i class="fas fa-sharp fa-regular fa-down-from-line fa-bounce"></i> -->
+      <a href="#">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/10233/10233892.png"
+          alt=""
+          class="fa-fade fa-beat-fade"
+          style="width: 50px"
+        />
+      </a>
+    </div>
+    <!-- ------------------------------------------------------------------------- -->
+    <footer class="text-lg-start text-md-center">
+      <div class="container-xl px-xl-0 px-sm-5">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <a href="#">
+              <img class="w-25" src="./imtxon 2/images/Logo.png" />
+            </a>
+            <p class="fss pt-4 pb-5 mx-lg-0 mx-md-auto p-0">
+              We made it our mission to create community everyday and grow
+              meaningful, lasting relationships with our staff, our suppliers
+              and of course you, our customers.
+            </p>
+            <h1>Store Locations</h1>
+            <p class="fss mx-lg-0 mx-md-auto p-sm-0">
+              Find your nearest Alowishus store with opening hours, location and
+              contact details.
+            </p>
+            <a
+              class="dark text-decoration-none d-flex align-items-baseline justify-content-lg-start justify-content-sm-center gap-2"
+              href="#"
+              >Find my Alowishus
+              <i class="fa-sharp fa-solid fa-arrow-right"> </i>
+            </a>
+          </div>
+          <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fs-2" href="#">Contact Alowishus!</a>
+              </li>
+              <li class="nav-item mx-lg-0 mx-md-auto">
+                <a
+                  class="link bg-white rounded-circle"
+                  href="http://email.com/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-envelope fa-fade"></i>
+                </a>
+                alowishus@gmai.com
+              </li>
+              <li class="nav-item mx-lg-0 mx-md-auto">
+                <a
+                  class="link bg-white rounded-circle"
+                  href="https://www.tel.ru/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-phone fa-fade"></i>
+                </a>
+                alowishus@gmai.com
+              </li>
+              <li class="nav-item last mx-lg-0 mx-md-auto">
+                <a
+                  class="link bg-white rounded-circle"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f fa-fade"></i>
+                </a>
+                <a
+                  class="link bg-white rounded-circle"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram fa-fade"></i>
+                </a>
+                <a
+                  class="link bg-white rounded-circle"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-twitter fa-fade"></i>
+                </a>
+                <a
+                  class="link bg-white rounded-circle"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in fa-fade"></i>
+                </a>
+              </li>
+            </ul>
+            <form class="row pt-5">
+              <h1 class="fs-1">First One's On Us!</h1>
+              <div class="px-3 py-2">
+                <input
+                  type="email"
+                  class="w-75 form-control rounded-pill px-3 py-04 border-0 shadow-sm mx-lg-0 mx-md-auto"
+                  placeholder="E-mail"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+                <button class="button-btn rounded-pill px-4 py-3 mt-4">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <a class="fot" href="#"
+              >Copytright © 2022 <span>Alowishus Delicious</span></a
+            >
+          </div>
+          <div class="col-lg-6 col-md-12 text-lg-end text-sm-center">
+            <a class="fot" href="#">Terms of Use | Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------------------------------------- -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
